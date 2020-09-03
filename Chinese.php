@@ -33,8 +33,8 @@ class Chinese
 
         // If not set to zh_*, parsing CSV will not work properly
         // setlocale(LC_ALL, 'zh_Hant');
-        setlocale(LC_COLLATE, 'zh_Hant');
-        setlocale(LC_CTYPE, 'zh_Hant');
+        setlocale(LC_COLLATE, 'zh_CN');
+        setlocale(LC_CTYPE, 'zh_CN');
 
         $file = new \SplFileObject($path);
         $file->setFlags(
